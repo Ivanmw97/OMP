@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "232294073812",
+    "firebase_url": "https://omp-project-3d149.firebaseio.com",
+    "project_id": "omp-project-3d149",
+    "storage_bucket": "omp-project-3d149.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232294073812:android:263a6a80fb29346aa20241",
+        "android_client_info": {
+          "package_name": "com.project.omp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232294073812-1cjuk67jbljqpnrd260bmntcjiulilfi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.omp",
+            "certificate_hash": "f9157e7ffbf10c7160a45a3f116fd55697e43f07"
+          }
+        },
+        {
+          "client_id": "232294073812-s3m00d9gj4iqb13ufrmhp8amj332pie0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy6qU7DWvHCH4bEBUeHkumVM9AfNGrEAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232294073812-s3m00d9gj4iqb13ufrmhp8amj332pie0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
