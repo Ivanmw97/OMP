@@ -12,7 +12,7 @@ import com.project.omp.exoplayer.FirebaseMusicSource
 
 class MusicPlayerbackPreparer(
     private val firebaseMusicSource: FirebaseMusicSource,
-    private val playerPrepare: (MediaMetadataCompat) -> Unit
+    private val playerPrepare: (MediaMetadataCompat?) -> Unit
 ) : MediaSessionConnector.PlaybackPreparer{
     override fun onCommand(
         player: Player,
