@@ -27,7 +27,7 @@ class FirebaseMusicSource @Inject constructor(
         songs = allSongs.map { song ->
             MediaMetadataCompat.Builder()
                 .putString(METADATA_KEY_ARTIST, song.subtitle)
-                .putString(METADATA_KEY_MEDIA_ID, song.mediaID)
+                .putString(METADATA_KEY_MEDIA_ID, song.mediaId)
                 .putString(METADATA_KEY_TITLE, song.title)
                 .putString(METADATA_KEY_DISPLAY_TITLE, song.title)
                 .putString(METADATA_KEY_DISPLAY_ICON_URI, song.imageUrl)
@@ -42,7 +42,7 @@ class FirebaseMusicSource @Inject constructor(
 
     fun asMediaSource(dataSourceFactory: DefaultDataSourceFactory): ConcatenatingMediaSource {
         val concatenatingMediaSource = ConcatenatingMediaSource()
-        songs.forEach{ song ->
+        songs.forEach { song ->
             val mediaSource = ProgressiveMediaSource.Factory(dataSourceFactory)
                 .createMediaSource(song.getString(METADATA_KEY_MEDIA_URI).toUri())
             concatenatingMediaSource.addMediaSource(mediaSource)
@@ -65,20 +65,20 @@ class FirebaseMusicSource @Inject constructor(
 
     private var state: State = STATE_CREATED
         set(value) {
-            if (value == STATE_INITIALIZED || value == STATE_ERROR) {
+            if(value == STATE_INITIALIZED || value == STATE_ERROR) {
                 synchronized(onReadyListeners) {
                     field = value
                     onReadyListeners.forEach { listener ->
                         listener(state == STATE_INITIALIZED)
                     }
                 }
-            }else {
+            } else {
                 field = value
             }
         }
 
     fun whenReady(action: (Boolean) -> Unit): Boolean {
-        if (state == STATE_CREATED || state == STATE_INITIALIZING) {
+        if(state == STATE_CREATED || state == STATE_INITIALIZING) {
             onReadyListeners += action
             return false
         } else {
@@ -94,3 +94,18 @@ enum class State {
     STATE_INITIALIZED,
     STATE_ERROR
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

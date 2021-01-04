@@ -10,7 +10,7 @@
         android:id="@+id/tvSongName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="NOMBRE CANCIÓN"
+        android:text="SONG NAME"
         android:gravity="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/ivSongImage"

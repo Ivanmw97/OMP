@@ -22,7 +22,7 @@ class MusicNotificationManager(
     private val newSongCallback: () -> Unit
 ) {
 
-    private  val notificationManager: PlayerNotificationManager
+    private val notificationManager: PlayerNotificationManager
 
     init {
         val mediaController = MediaControllerCompat(context, sessionToken)
@@ -44,9 +44,10 @@ class MusicNotificationManager(
         notificationManager.setPlayer(player)
     }
 
-    private inner class  DescriptionAdapter(
+    private inner class DescriptionAdapter(
         private val mediaController: MediaControllerCompat
-    ): PlayerNotificationManager.MediaDescriptionAdapter {
+    ) : PlayerNotificationManager.MediaDescriptionAdapter {
+
         override fun getCurrentContentTitle(player: Player): CharSequence {
             return mediaController.metadata.description.title.toString()
         }
@@ -65,7 +66,7 @@ class MusicNotificationManager(
         ): Bitmap? {
             Glide.with(context).asBitmap()
                 .load(mediaController.metadata.description.iconUri)
-                .into(object : CustomTarget<Bitmap>(){
+                .into(object : CustomTarget<Bitmap>() {
                     override fun onResourceReady(
                         resource: Bitmap,
                         transition: Transition<in Bitmap>?
@@ -79,3 +80,24 @@ class MusicNotificationManager(
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

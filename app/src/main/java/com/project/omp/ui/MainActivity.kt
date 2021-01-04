@@ -2,7 +2,6 @@ package com.project.omp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestManager
 import com.project.omp.R
 import dagger.hilt.android.AndroidEntryPoint
