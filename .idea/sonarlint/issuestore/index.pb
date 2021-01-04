@@ -55,3 +55,11 @@ A
 Xapp/src/main/java/com/project/omp/exoplayer/callbacks/MusicPlayerNotificationListener.kt,5\d\5dd66fb254302448956eaf653a6181b1169c2513
 ~
 Napp/src/main/java/com/project/omp/exoplayer/callbacks/MusicPlaybackPreparer.kt,2\4\24b193edad7cbfbba59145ef0a3eeb216d561d4d
+Y
+)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
+Y
+)app/src/main/res/layout/fragment_song.xml,5\2\5259ce3524f53ab3d43bbcecb5c1e462306d27ab
+Y
+)app/src/main/res/navigation/nav_graph.xml,b\a\baffce053da291d96fb575a09f2bbe9aaa9c4be9
+R
+"app/src/main/res/values/colors.xml,9\6\969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
